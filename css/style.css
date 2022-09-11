@@ -1,0 +1,261 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+html{
+    scroll-behavior: smooth
+}
+nav{
+    display: flex;
+    align-items: center;
+    color: var(--c-w);
+    padding: 1rem 2rem;
+    justify-content: space-between;
+    background-color: #00000050;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+#logo img{
+    width: 200px;
+}
+.navbar{
+    display: flex;
+}
+.navbar li{
+    list-style: none;
+    margin: 8px 32px;
+}
+.navbar li a{
+    text-decoration: none;
+    color: var(--c-w);
+}
+.btn{
+    padding: 8px;
+    background: none;
+    color: var(--c-w);
+    border: 1px solid var(--c-w);
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: var(--c-w);
+    color: black;
+    cursor: pointer;
+}
+#main::before{
+    background: #00000070 url('../img/bg.jpg') center/cover;
+    background-blend-mode: darken;
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 90vh;
+    z-index: -1;
+}
+#main{
+    color: var(--c-w);
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#main h2{
+    color: var(--c-c);
+    font-family: 'Great Vibes', cursive;
+    
+}
+#main h1{
+    padding: .5rem;
+} 
+#content{
+    width: 50%;
+}
+#about{
+    display: flex;
+    position: relative;
+}
+.get-img img{
+    width: 350px;
+    padding: 1rem;
+}
+#get-content{
+    border: 2px solid #b49383;
+    position: absolute;
+    background-color: var(--c-w);
+    width: 35%;
+    right: -4px;
+    top: 165px;
+}
+#get-content h2{
+    padding: .5rem 0;
+}
+#get-content h3{
+    color: var(--c-c);
+}
+#get-content p{
+    padding: 1rem 0;
+    color: var(--c-g);
+}
+#menu-head{
+    
+    background-color: rgb(15, 15, 15);
+    padding: 1rem;
+}
+#menu-head h2{
+    font-family: 'Great Vibes', cursive;
+    padding: 0.5rem;
+    border: 2px solid #b49383;
+    color: var(--c-c);
+    text-align: center;
+}
+#menu-item{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu-categories{
+    border: 1px solid lightgray;
+    margin: 1rem;
+    padding: 1rem;
+    flex-grow: 1;
+
+}
+.menu-categories h2{
+    color: var(--c-c);
+    padding: .5rem;
+    border: 2px solid #b49383;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+.menu-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+.menu-item h4{
+    font-size: 1.25rem;
+    
+}
+.menu-item span{
+    
+    color: var(--c-c);
+}
+#contact{
+    background: #00000070 url(../img/banner-1.jpg) center/cover;
+    background-blend-mode: darken;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#contact iframe{
+    padding-right: 2rem;
+}
+#det{
+    width: 450px;
+    height: 420px;
+    background-color: white;
+    padding: 1rem;
+}
+#bd{
+    height: 100%;
+    border: 1px solid #b49383;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#footer{
+    background-color: rgb(26, 23, 23);
+    margin-top: 4rem;
+    color: var(--c-w);
+    display: flex;
+    align-items: center;
+}
+#about-us{
+    
+    padding: 1rem;
+}
+#about-us img{
+    width: 250px;
+}
+#footer-content{
+    width: 55%;
+}
+#footer-content p{
+    padding: 1rem;
+}
+/* #links h3{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+}
+#links ul li{
+    list-style: none;
+    padding: 0.5rem 0;
+}
+#links ul li a{
+    text-decoration: none;
+    color: var(--c-w);
+} */
+#social{
+    margin: auto;
+}
+#social h3{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    text-align: center;
+}
+#social i{
+    padding: 0 8px;
+    cursor: pointer;
+    
+}
+#about-us div{
+    padding: 1rem 0;
+}
+#copy{
+    display: none;
+}
+#hamburger{
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: 2px solid white;
+}
+.line{
+    background-color: white;
+    height: .5px;
+    width: 20px;
+    margin: 4px;
+    
+}
+:root{
+    --c-w: white;
+    --c-g: grey;
+    --c-c: #b49383;
+}
+
+
+.h1{
+    font-size: 3rem;
+}
+.h2{
+    font-size: 2.5rem;
+}
+.h3{
+    font-size: 2rem;
+}
+.p-4{
+    padding: 4rem;
+}
+.p-2{
+    padding: 2rem;
+}
+.p-1{
+    padding: 1rem;
+}
